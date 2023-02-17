@@ -1,0 +1,23 @@
+article{
+    display: flex;
+    flex-direction: column;
+    margin: 0.2rem 0.8rem;
+    padding: 1.4rem 0;
+    border-bottom: 1px solid rgb(134, 130, 130);
+}
+
+h2{
+    color: black;
+    padding-bottom: 0.3rem;
+}
+
+p{
+    color: black;
+}
+.article{
+    padding-top: 0.9rem;
+}
+
+ a{
+    text-decoration: none;
+}

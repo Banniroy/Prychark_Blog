@@ -1,10 +1,18 @@
 import React from 'react'
+import './Home.css'
+import Feed from './Feed';
 
-const Home = () => {
+const Home = ({ posts }) => {
   return (
-    <div>
-        <h1>Home</h1>
-    </div>
+    <main>
+        {posts.length ? (
+          <Feed posts={posts} /> 
+        ) : (
+          <p style={{marginTop: '3rem'}}>
+            No posts to display.
+          </p>
+        )}
+    </main>
   )
 }
 

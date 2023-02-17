@@ -1,0 +1,6 @@
+main{
+    max-width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}

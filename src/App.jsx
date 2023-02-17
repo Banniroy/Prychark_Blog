@@ -11,19 +11,63 @@ import { Route, Switch, useHistory } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function App() {
+
+  const [posts, setPosts] = useState([
+    {
+      id: 1,
+      title: 'My First Post',
+      datetime: 'July 01, 2021 11:23 AM',
+      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim odio eum perferendis velit '
+    },
+    {
+      id: 2,
+      title: 'My Second Post',
+      datetime: 'July 01, 2021 11:23 AM',
+      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim odio eum perferendis velit voluptates vero earum? Ea sed, porro adipisci distinctio natus deleniti eius dolorem fuga dolorum, debitis, fugit tempore?'
+    },
+    {
+      id: 3,
+      title: 'My Third Post',
+      datetime: 'July 01, 2021 11:23 AM',
+      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim odio eum perferendis velit '
+    },
+    {
+      id: 4,
+      title: 'My Fourth Post',
+      datetime: 'July 01, 2021 11:23 AM',
+      body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim odio eum perferendis velit '
+    }
+  ])
+
+  const [search, setSearch] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+
+  const handleDelete = (id) =>{
+    const postList = posts.filter(post => post.id !== id);
+    setPosts(postList);
+  }
+
   return (
     <div className="App">
       <Header title="Prychark Blog" />
-      <Nav />
+      <Nav
+        search={search}
+        setSearch={setSearch}
+      />
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home 
+            posts={posts}
+          />
         </Route>
         <Route exact path="/post">
           <NewPost />
         </Route>
         <Route path="/post/:id">
-          <PostPage />
+          <PostPage 
+            posts={posts}
+            handleDelete={handleDelete}
+          />
         </Route>
         <Route path="/about" component={About} />
         <Route path="*" component={Missing} />
