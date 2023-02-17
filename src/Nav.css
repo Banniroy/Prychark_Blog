@@ -1,0 +1,50 @@
+.Nav{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+}
+
+label{
+    position: absolute;
+    left: -100000px;
+}
+
+.searchForm{
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem 1rem;
+}
+
+input{
+    width: 75vw;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 0.5rem;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 70vw;
+    justify-content: space-around;
+}
+
+li{
+    display: flex;
+    justify-content: space-around;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+li a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 0.4rem;
+}
+
+li a:hover{
+    color: green;
+}
