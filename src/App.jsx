@@ -41,10 +41,12 @@ function App() {
 
   const [search, setSearch] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-
+  const history = useHistory();
+  
   const handleDelete = (id) =>{
-    const postList = posts.filter(post => post.id !== id);
-    setPosts(postList);
+    const postsList = posts.filter(post => post.id !== id);
+    setPosts(postsList);
+    history.push('/');
   }
 
   return (
