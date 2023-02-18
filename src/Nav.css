@@ -15,7 +15,7 @@ label{
     padding: 0.7rem 1rem;
 }
 
-.searchInput{
+input{
     width: 75vw;
     height: 40px;
     outline: none;
