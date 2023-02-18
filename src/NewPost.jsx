@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './NewPost.css';
 
 const NewPost = ({ handleSubmit, postTitle, setPostTitle, postBody, setPostBody }) => {
   return (
-    <main>
+    <main className='NewPost'>
       <h2>New Post</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="postTitle">Title:</label>
