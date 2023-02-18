@@ -17,7 +17,7 @@ const NewPost = ({ handleSubmit, postTitle, setPostTitle, postBody, setPostBody 
         <textarea
           id='postBody'
           required
-          value={postBody}
+          // value={postBody}
           onChange={(e) => setPostBody(e.target.value)}
         />
         <button type='submit'>Submit</button>
