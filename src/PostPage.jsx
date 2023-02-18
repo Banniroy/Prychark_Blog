@@ -8,7 +8,7 @@ const PostPage = ({ posts, handleDelete }) => {
   const post = posts.find(post => (post.id).toString() === id);
 
   return (
-    <main>
+    <main className='postPageMain'>
       <article className='PostPage'>
         {post &&
           <>
