@@ -39,10 +39,7 @@
     padding: 1rem;
 }
 
-.Nav li:hover, 
-.Nav li:focus {
-    padding: 1rem;
-}
+
 
 .Nav li a {
     text-decoration: none;
@@ -52,8 +49,7 @@
 .Nav li:hover, 
 .Nav li:focus, 
 .Nav li:hover a, 
-.Nav li:focus a  {
-    background-color: #eee;  
+.Nav li:focus a  {  
     color: green;
 }
 
