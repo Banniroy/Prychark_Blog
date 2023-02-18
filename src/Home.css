@@ -1,6 +1,8 @@
-.homePage{
-    max-width: 100vw;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
+.Home{
+    font-family: sans-serif, cursive;
+    width: 100%;
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background-color: whitesmoke;
 }

@@ -3,7 +3,7 @@ import './NewPost.css';
 
 const NewPost = ({ handleSubmit, postTitle, setPostTitle, postBody, setPostBody }) => {
   return (
-    <main className='NewPost'>
+    <main className='newPostForm'>
       <h2>New Post</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="postTitle">Title:</label>

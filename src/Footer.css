@@ -1,0 +1,10 @@
+.Footer {
+  font-family: sans-serif, cursive;
+  width: 100%;
+  background-color: #333;
+  padding: 1rem;
+  padding: 0.75rem;
+  display: grid;
+  place-content: center;
+  color: whitesmoke;
+}

@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Post = ( {postMapped }) => {
   return (
-    <article className='mappedPost'>
+    <article className='post'>
         <Link to={`/post/${postMapped.id}`}>
             <h2>{postMapped.title}</h2>
-            <p>{postMapped.datetime}</p>
+            <p className='postDate'>{postMapped.datetime}</p>
         </Link>
-        <p className='article'>{
+        <p className='postBody'>{
             (postMapped.body).length <= 25
                 ? postMapped.body
                 : `${(postMapped.body).slice(0, 45)}...`

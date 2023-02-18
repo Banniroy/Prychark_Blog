@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom';
-import './PostPage.css'
+import './PostPage.css';
 
 const PostPage = ({ posts, handleDelete }) => {
 
@@ -9,7 +9,7 @@ const PostPage = ({ posts, handleDelete }) => {
 
   return (
     <main>
-      <article className='postArticle'>
+      <article className='PostPage'>
         {post &&
           <>
             <h2>{post.title}</h2>

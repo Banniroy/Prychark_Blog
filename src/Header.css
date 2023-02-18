@@ -1,9 +1,18 @@
-.header{
+.Header{
+    font-family: sans-serif, cursive;
     background-color: darkgreen;
     color: white;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 1rem;
     align-items: center;
+}
+
+.Header h1 {
+    font-size: 1.5rem;
+}
+
+.Header svg {
+   font-size: 2rem;
 }

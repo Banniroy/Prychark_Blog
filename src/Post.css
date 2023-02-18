@@ -1,23 +1,34 @@
-.mappedPost{
-    display: flex;
-    flex-direction: column;
-    margin: 0.2rem 0.8rem;
-    padding: 1.4rem 0;
-    border-bottom: 1px solid rgb(134, 130, 130);
+.post {
+    font-family: sans-serif, cursive;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
 }
 
+.post a, 
+.post a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.post:first-child {
+    margin-top: 0;
+}
+  
+.post:last-child {
+    border-bottom: none;
+}
+  
 .mappedPost h2{
     color: black;
     padding-bottom: 0.3rem;
 }
 
-.mappedPost p{
-    color: black;
-}
-.mappedPost .article{
-    padding-top: 0.9rem;
+.postDate {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
 }
 
- a{
-    text-decoration: none;
+.postBody {
+    margin: 1rem 0;
 }
