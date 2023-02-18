@@ -15,7 +15,7 @@ label{
     padding: 0.7rem 1rem;
 }
 
-input{
+.searchInput{
     width: 75vw;
     height: 40px;
     outline: none;
@@ -24,14 +24,14 @@ input{
     padding: 0.5rem;
 }
 
-ul{
+.Nav ul{
     display: flex;
     list-style-type: none;
     width: 70vw;
     justify-content: space-around;
 }
 
-li{
+.Nav li{
     display: flex;
     justify-content: space-around;
     display: block;

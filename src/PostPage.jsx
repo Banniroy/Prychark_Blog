@@ -9,7 +9,7 @@ const PostPage = ({ posts, handleDelete }) => {
 
   return (
     <main>
-      <article>
+      <article className='postArticle'>
         {post &&
           <>
             <h2>{post.title}</h2>

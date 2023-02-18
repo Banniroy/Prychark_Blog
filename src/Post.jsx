@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Post = ( {postMapped }) => {
   return (
-    <article>
+    <article className='mappedPost'>
         <Link to={`/post/${postMapped.id}`}>
             <h2>{postMapped.title}</h2>
             <p>{postMapped.datetime}</p>

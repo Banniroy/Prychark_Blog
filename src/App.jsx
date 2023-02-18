@@ -55,12 +55,12 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const id = posts.length ? posts[posts.length -1].id + 1 : 1
+    const id = posts.length ? posts[posts.length -1].id + 1 : 1;
     const datetime = format(new Date(), 'MMMM dd, yyyy pp');
     const newPost = { id, title: postTitle, datetime, body: postBody }
     const allPosts = [...posts, newPost];
     setPosts(allPosts);
-    setPostTitle('');
+    setPostTitle();
     setPostBody('');
     history.push('/');
   }

@@ -8,6 +8,7 @@ const Nav = ({ search, setSearch }) => {
       <form className='searchForm' onSubmit={(e) => e.preventDefault()}>
         <label htmlFor="search">Search Posts</label>
         <input
+          className='mappedPost'
           type="text"
           id='search'
           placeholder='Search Posts'

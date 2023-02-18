@@ -4,7 +4,7 @@ import Feed from './Feed';
 
 const Home = ({ posts }) => {
   return (
-    <main>
+    <main className='homePage'>
         {posts.length ? (
           <Feed posts={posts} /> 
         ) : (
