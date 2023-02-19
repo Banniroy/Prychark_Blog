@@ -14,12 +14,12 @@
   
 .newPostForm input[type='text'], 
 .newPostForm textarea {
-    width: 90%;
+    width: 98%;
     min-height: 48px;
     font-size: 1rem;
     padding: 0.25rem;
     border-radius: 0.25rem;
-    margin-right: 0.25rem;
+    margin: 0 auto;
     outline: none;
 }
   
@@ -29,7 +29,7 @@
   
 .newPostForm button {
     background-color: darkgreen;
-    color: whitesmoke;
+    color: white;
     margin-top: 1rem;
     height: 40px;
     min-width: 48px;
@@ -37,4 +37,8 @@
     padding: 0.5rem;
     font-size: 1rem;
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
