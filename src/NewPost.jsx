@@ -3,25 +3,25 @@ import './NewPost.css';
 
 const NewPost = ({ handleSubmit, postTitle, setPostTitle, postBody, setPostBody }) => {
   return (
-    <main className='newPostForm'>
+    <main className="NewPost">
       <h2>New Post</h2>
-      <form onSubmit={handleSubmit}>
+      <form className="newPostForm" onSubmit={handleSubmit}>
         <label htmlFor="postTitle">Title:</label>
         <input
+          id="postTitle"
           type="text"
-          id='postTitle'
           required
           value={postTitle}
-          onChange={(e) => setPostTitle = (e.target.value)}
+          onChange={(e) => setPostTitle(e.target.value)}
         />
         <label htmlFor="postBody">Post:</label>
         <textarea
-          id='postBody'
+          id="postBody"
           required
           value={postBody}
           onChange={(e) => setPostBody(e.target.value)}
         />
-        <button type='submit'>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </main>
   )

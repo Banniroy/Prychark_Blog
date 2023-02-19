@@ -49,7 +49,7 @@ function App() {
     const filteredResults = posts.filter(post => ((post.body).toLocaleLowerCase()).includes(search.toLocaleLowerCase())
     || ((post.title).toLocaleLowerCase()).includes(search.toLocaleLowerCase())
   );
-  setSearchResults(filteredResults.reverse());
+  setSearchResults(filteredResults.reverse()); 
   }, [posts, search]) 
 
   const handleSubmit = (e) => {
